@@ -14,9 +14,6 @@ int main() {
 	for (size_t i = 0; i < size; i++)
 		*(array + i) = random(10, 50);
 
-
-
-
 	for (size_t i = 0; i < size; i++)
 		cout << *(array + i) << endl;
 	
