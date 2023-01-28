@@ -7,7 +7,7 @@ void readReference(int&);
 
 
 
-int mAin() {
+int masin() {
 
 	int n1, n2;
 
@@ -27,5 +27,5 @@ void readPointer(int* number){
 
 void readReference(int& number) {
 	int* p = &number;
-	cin >> number;
+	cin >> *p;
 }

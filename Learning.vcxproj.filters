@@ -35,5 +35,14 @@
     <ClCompile Include="PointersAndReferences.cpp">
       <Filter>Исходные файлы\Learning</Filter>
     </ClCompile>
+    <ClCompile Include="EvenOdd.cpp">
+      <Filter>Исходные файлы\Lab</Filter>
+    </ClCompile>
+    <ClCompile Include="UnionOfArrays.cpp">
+      <Filter>Исходные файлы\Lab</Filter>
+    </ClCompile>
+    <ClCompile Include="Gigabite.cpp">
+      <Filter>Исходные файлы\Lab</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
