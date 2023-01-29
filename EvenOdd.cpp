@@ -21,8 +21,7 @@ int main() {
 	
 	cout << endl;
 
-	int* filtered; 
-	filtered = filter(array, size);
+	int* filtered = filter(array, size);
 
 	printArray(array, size);
 
