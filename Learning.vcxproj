@@ -132,7 +132,6 @@
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="EvenOdd.cpp" />
-    <ClCompile Include="Gigabite.cpp" />
     <ClCompile Include="PointersAndReferences.cpp" />
     <ClCompile Include="Fraction.cpp" />
     <ClCompile Include="UnionOfArrays.cpp" />

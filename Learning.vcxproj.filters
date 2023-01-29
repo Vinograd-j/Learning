@@ -41,8 +41,5 @@
     <ClCompile Include="UnionOfArrays.cpp">
       <Filter>Исходные файлы\Lab</Filter>
     </ClCompile>
-    <ClCompile Include="Gigabite.cpp">
-      <Filter>Исходные файлы\Lab</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

@@ -3,7 +3,8 @@
 using namespace std;
 
 int random(int a, int b);
-int* filter(int array[], int size);
+int* filter(int* array, int size);
+void printArray(int* array, int size);
 
 int main() {
 
@@ -16,16 +17,14 @@ int main() {
 	for (size_t i = 0; i < size; i++)
 		array[i] = random(1,20);
 
-	for (size_t i = 0; i < size; i++)
-		cout << array[i] << endl;
+	printArray(array,size);
 	
 	cout << endl;
 
 	int* filtered; 
 	filtered = filter(array, size);
 
-	for (size_t i = 0; i < size; i++)
-		cout << filtered[i] << endl;
+	printArray(array, size);
 
 	return 0;
 }
@@ -34,7 +33,7 @@ int random(int a, int b) {
 	return (rand() % (b - a + 1)) + a;
 }
 
-int* sort(int array[], int size)
+int* filter(int* array, int size)
 {
 	int temp;
 
@@ -51,4 +50,9 @@ int* sort(int array[], int size)
 		}
 	}
 	return array;
+}
+
+void printArray(int* array, int size) {
+	for (size_t i = 0; i < size; i++)
+		cout << array[i] << endl;
 }
