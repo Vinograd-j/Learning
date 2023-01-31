@@ -41,3 +41,36 @@ bool contains(int* array, int size, int element) {
 
     return false;
 }
+
+bool isValid(char* str)
+{
+    int size = sizeOfString(str);
+
+    int indexOfSpace = -1;
+
+    for (size_t i = 0; i < size; i++)
+    {
+        if (str[i] == ' ') 
+        {
+            if (indexOfSpace != -1)
+                return false;
+
+            indexOfSpace = i;
+        }
+    }
+
+    if (indexOfSpace == 0 || indexOfSpace == size - 1 || indexOfSpace == -1)
+        return false;
+    
+    return true;
+}
+
+int sizeOfString(const char* str) {
+
+    int index = 0;
+
+    while (str[index] != '\0')
+        index++;
+
+    return index;
+}

@@ -2,10 +2,10 @@
 
 #include "Functions.h"
 
-int main() {
+int madsvin() {
 
 	int first[] = { 1, 2, 3 };
-	int second[] = { 3, 4, 5 };
+	int second[] = { 3, 4, 5 , 1};
 
 	int totalSize;
 
@@ -19,5 +19,7 @@ int main() {
 		std::cout << total[i] << std::endl;
 
 	delete[] total;
+
+	return 0;
 }
 
