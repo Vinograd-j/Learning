@@ -54,4 +54,9 @@
       <Filter>Исходные файлы\Learning</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assebler.asm">
+      <Filter>Исходные файлы\Lab</Filter>
+    </None>
+  </ItemGroup>
 </Project>
