@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Fraction.h" />
+    <ClInclude Include="Functions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="EvenOdd.cpp" />
+    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="PointersAndReferences.cpp" />
     <ClCompile Include="Fraction.cpp" />
     <ClCompile Include="UnionOfArrays.cpp" />

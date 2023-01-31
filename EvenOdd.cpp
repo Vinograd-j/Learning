@@ -1,14 +1,12 @@
 #include <iostream>
+#include "Functions.h"
 
 using namespace std;
 
-int random(int a, int b);
-int* filter(int* array, int size);
+void filter(int* array, int size);
 void printArray(int* array, int size);
 
-int main() {
-
-	srand(time(NULL));
+int msdfain() {
 
 	const int size = 10;
 
@@ -21,18 +19,15 @@ int main() {
 	
 	cout << endl;
 
-	int* filtered = filter(array, size);
+	filter(array, size);
 
 	printArray(array, size);
 
 	return 0;
 }
 
-int random(int a, int b) {
-	return (rand() % (b - a + 1)) + a;
-}
 
-int* filter(int* array, int size)
+void filter(int* array, int size)
 {
 	int temp;
 
@@ -48,7 +43,6 @@ int* filter(int* array, int size)
 			}
 		}
 	}
-	return array;
 }
 
 void printArray(int* array, int size) {
