@@ -1,11 +1,11 @@
 #include <iostream>
 #include "Functions.h"
 
-void main() {
+void mahin() {
 
 	const char* str = "Pidor Mudak";
 
 
-	std::cout << isValid(const_cast<char*>("idi naxui "));
+	std::cout << isValid(const_cast<char*>(""));
 
 }

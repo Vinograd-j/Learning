@@ -1,8 +1,7 @@
 #include <iostream>
-
 #include "Functions.h"
 
-int madsvin() {
+int masdfin() {
 
 	int first[] = { 1, 2, 3 };
 	int second[] = { 3, 4, 5 , 1};
@@ -20,6 +19,7 @@ int madsvin() {
 
 	delete[] total;
 
+	
+
 	return 0;
 }
-

@@ -5,8 +5,6 @@ using namespace std;
 void readPointer(int*);
 void readReference(int&);
 
-
-
 int masin() {
 
 	int n1, n2;

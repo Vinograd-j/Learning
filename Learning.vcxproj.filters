@@ -53,5 +53,8 @@
     <ClCompile Include="CString.cpp">
       <Filter>Исходные файлы\Learning</Filter>
     </ClCompile>
+    <ClCompile Include="NumberPreparation.cpp">
+      <Filter>Исходные файлы\Learning</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
