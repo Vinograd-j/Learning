@@ -7,10 +7,10 @@ const char* substring(const char* string, int startIndex, int endIndex);
 double parseNumber(const char* string);
 double fractionToDouble(const char* digits);
 int countOfSymbol(const char* string, char symbol);
-int stringLength(const char* string);
+int getStringLength(const char* string);
 std::pair<const char*, const char*> splitPair(const char* string, char spliterator);
 
-int main() {
+int maiasdn() {
 
 	const char* string = "-0.36546464848451231231564878";
 
@@ -22,7 +22,7 @@ int main() {
 
 double parseNumber(const char* string) {
 
-	int size = stringLength(string);
+	int size = getStringLength(string);
 
 	bool isNegative = string[0] == '-';
 
@@ -51,12 +51,12 @@ double parseNumber(const char* string) {
 }
 
 double fractionToDouble(const char* digits) {
-	return digitsToNumber(digits) / pow(10, stringLength(digits));
+	return digitsToNumber(digits) / pow(10, getStringLength(digits));
 }
 
 long digitsToNumber(const char* digits) {
 
-	int size = stringLength(digits);
+	int size = getStringLength(digits);
 	long number = 0;
 
 	for (size_t i = 0; i < size; i++)
@@ -77,7 +77,7 @@ int charToInt(char c) {
 
 const char* substring(const char* string, int startIndex, int endIndex) {
 
-	int size = stringLength(string);
+	int size = getStringLength(string);
 
 	if (!(startIndex >= 0 && startIndex < size && endIndex >= startIndex && endIndex < size))
 		throw "Index out of bounds exception";
@@ -112,7 +112,7 @@ int countOfSymbol(const char* string, char symbol) {
 
 	int count = 0;
 
-	for (size_t i = 0; i < stringLength(string); i++)
+	for (size_t i = 0; i < getStringLength(string); i++)
 	{
 		if (string[i] == symbol)
 			count++;
@@ -120,7 +120,7 @@ int countOfSymbol(const char* string, char symbol) {
 	return count;
 }
 
-int stringLength(const char* string)
+int getStringLength(const char* string)
 {
 	int index = 0;
 	
@@ -133,7 +133,7 @@ typedef unsigned int uint32;
 
 std::pair<const char*, const char*> splitPair(const char* string, char spliterator)
 {
-	int size = stringLength(string);
+	int size = getStringLength(string);
 
 	int spliteratorIndex = -1;
 

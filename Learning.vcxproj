@@ -127,18 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Fraction.h" />
+    <ClInclude Include="fraction.h" />
     <ClInclude Include="Functions.h" />
+    <ClInclude Include="linked_list.h" />
+    <ClInclude Include="vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AdditionNumbers.cpp" />
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="CString.cpp" />
     <ClCompile Include="EvenOdd.cpp" />
-    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="files.cpp" />
+    <ClCompile Include="fraction.cpp" />
+    <ClCompile Include="linked_list.cpp" />
     <ClCompile Include="NumberPreparation.cpp" />
     <ClCompile Include="PointersAndReferences.cpp" />
-    <ClCompile Include="Fraction.cpp" />
+    <ClCompile Include="TEST.cpp" />
+    <ClCompile Include="Strings.cpp" />
     <ClCompile Include="UnionOfArrays.cpp" />
+    <ClCompile Include="Vehicles.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

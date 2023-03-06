@@ -22,20 +22,41 @@
     <Filter Include="Исходные файлы\Lib">
       <UniqueIdentifier>{af66d505-678d-4d7c-9042-196b62da9456}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\game">
+      <UniqueIdentifier>{ef1b9118-6bb6-4606-ba5e-1aa1c8b69d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FilesAndStructures">
+      <UniqueIdentifier>{cb45477e-d21f-4e47-a6c0-5a66e81132b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{3ec1412a-e975-404a-af87-ed41087b6382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="linked_list">
+      <UniqueIdentifier>{01af907f-b2d8-4d2d-b7bb-f7be2409364b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Altoritms">
+      <UniqueIdentifier>{779da0f0-e1c1-498a-8838-fb935972bea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collections">
+      <UniqueIdentifier>{29a1c31b-5111-472f-9e1a-cdc8360ea538}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Fraction.h">
+    <ClInclude Include="Functions.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Functions.h">
-      <Filter>Исходные файлы\Lib</Filter>
+    <ClInclude Include="fraction.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="linked_list.h">
+      <Filter>linked_list</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>Collections</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Arrays.cpp">
-      <Filter>Исходные файлы\Learning</Filter>
-    </ClCompile>
-    <ClCompile Include="Fraction.cpp">
       <Filter>Исходные файлы\Learning</Filter>
     </ClCompile>
     <ClCompile Include="PointersAndReferences.cpp">
@@ -47,14 +68,32 @@
     <ClCompile Include="UnionOfArrays.cpp">
       <Filter>Исходные файлы\Lab</Filter>
     </ClCompile>
-    <ClCompile Include="Functions.cpp">
-      <Filter>Исходные файлы\Lib</Filter>
-    </ClCompile>
     <ClCompile Include="CString.cpp">
       <Filter>Исходные файлы\Learning</Filter>
     </ClCompile>
     <ClCompile Include="NumberPreparation.cpp">
       <Filter>Исходные файлы\Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="AdditionNumbers.cpp">
+      <Filter>Исходные файлы\Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="Strings.cpp">
+      <Filter>Исходные файлы\Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="files.cpp">
+      <Filter>Исходные файлы\Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="Vehicles.cpp">
+      <Filter>FilesAndStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="fraction.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="TEST.cpp">
+      <Filter>Исходные файлы\game</Filter>
+    </ClCompile>
+    <ClCompile Include="linked_list.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,0 +1,127 @@
+//#include<iostream>
+//
+//
+//int charToInt(char c);
+//long digitsToNumber(const char* digits);
+//bool contains(const char* string, char symbol);
+//const char* substring(const char* string, int startIndex, int endIndex);
+//double parseNumber(const char* string);
+//double fractionToDouble(const char* digits);
+//int getStringLength(const char* string);
+//std::pair<const char*, const char*> splitPair(const char* string, char spliterator);
+//
+//int maasdin() {
+//
+//	const char* string = "-0.36546464848451231231564878+13215.514";
+//
+//	std::cout << parseNumber(string);
+//
+//	return 0;
+//
+//}
+//
+//
+//double fractionToDouble(const char* digits) {
+//	return digitsToNumber(digits) / pow(10, getStringLength(digits));
+//}
+//
+//long digitsToNumber(const char* digits) {
+//
+//	int size = getStringLength(digits);
+//	long number = 0;
+//
+//	for (size_t i = 0; i < size; i++)
+//	{
+//		int digit = charToInt(digits[i]);
+//		number += digit * pow(10, size - i - 1);
+//	}
+//
+//	return number;
+//}
+//
+//int charToInt(char c) {
+//	if (c < '0' || c > '9')
+//		throw "Symbol is`t a digit";  
+//
+//	return c - '0';
+//}
+//
+//const char* substring(const char* string, int startIndex, int endIndex) {
+//
+//	int size = getStringLength(string);
+//
+//	if (!(startIndex >= 0 && startIndex < size && endIndex >= startIndex && endIndex < size))
+//		throw "Index out of bounds exception";
+//
+//	int newSize = endIndex - startIndex + 1;
+//
+//	char* filtered = new char[newSize + 1];
+//
+//	for (size_t i = 0; i < newSize; i++)
+//	{
+//		filtered[i] = string[startIndex + i];
+//	}
+//
+//	filtered[newSize] = '\0';
+//
+//	return filtered;
+//}
+//
+//bool contains(const char* string, char symbol) {
+//
+//	int index = 0;
+//
+//	while (string[index] != '\0')
+//		if (string[index++] == symbol)
+//			return true;
+//	
+//	return false;
+//}
+//
+//
+//int getStringLength(const char* string)
+//{
+//	int index = 0;
+//
+//	while (string[index++] != '\0');
+//
+//	return index - 1;
+//}
+//
+//
+//
+//typedef unsigned int uint32;
+//
+//std::pair<const char*, const char*> splitPair(const char* string, char spliterator)
+//{
+//	int size = getStringLength(string);
+//
+//	int spliteratorIndex = -1;
+//
+//	for (uint32 i = 0; i < size; i++)
+//	{
+//		char c = string[i];
+//
+//		if (c == spliterator) {
+//
+//			if (spliteratorIndex == -1) {
+//				spliteratorIndex = i;
+//				continue;
+//
+//			}
+//
+//			return std::pair<const char*, const char*>("", "");
+//		}
+//	}
+//
+//	const char* s1 = nullptr;
+//	if (spliteratorIndex == 0)
+//		s1 = substring("0", 0, 0);
+//	else
+//		s1 = substring(string, 0, spliteratorIndex - 1);
+//
+//	return std::pair<const char*, const char*>(
+//		s1,
+//		substring(string, spliteratorIndex + 1, size - 1)
+//		);
+//}

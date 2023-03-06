@@ -13,7 +13,7 @@ int msdfain() {
 	int array[size];
 
 	for (size_t i = 0; i < size; i++)
-		array[i] = random(1,20);
+		//array[i] = random(1,20);
 
 	printArray(array,size);
 	
